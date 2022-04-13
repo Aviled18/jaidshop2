@@ -17,6 +17,12 @@ code {
 main {
   flex: 1;
 }
+
+.btn-primary,
+.btn-outline-primary {
+  background-color: #f09916;
+  color: #000000;  
+}    
 .products {
   display: flex;
   flex-wrap: wrap;
@@ -54,6 +60,10 @@ main {
   height: 300px;
 
 }
+.card-product {
+  box-shadow: 0px 8px 15px;
+  transition: all 0.3s ease;
+}
 
 .card-image {
   display: flex;
@@ -61,7 +71,16 @@ main {
   margin-bottom: 4rem;
   width: 200px;
   max-height: 300px;
+  box-shadow: 0px 8px 15px;
+  transition: all 0.3s ease;
+
 }
+.card-image:hover {
+  background: #022524;
+  transform: translateY(-7px);
+  color: #da870b;
+}
+
 
 .small-container {
   width: 60%;
@@ -75,6 +94,32 @@ main {
 .checkout-steps > div.active {
   border-bottom: 0.2rem solid #f08000;
   color: #f08000;
+}
+
+/* sidebar */
+.navbar-brand {
+  font-weight: bold;
+}
+.side-navbar {
+  width: 240px;
+  height: 100%;
+  position: absolute;
+  left: -300px;
+  background-color: #100901;
+  transition: 0.5s;
+}
+
+.site-container {
+  transition: 0.4s;
+}
+.active-cont {
+  margin-left: 240px;
+}
+.active-nav {
+  left: 0;
+}
+.text-bold {
+  font-weight: bold;
 }
 
 @media screen and (min-width: 40em) {
