@@ -8,7 +8,7 @@ import Row from 'react-bootstrap/Row';
 import { Helmet } from 'react-helmet-async';
 import MessageBox from '../components/MessageBox';
 import { Store } from '../Store';
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 export default function CartScreen() {
@@ -105,7 +105,7 @@ export default function CartScreen() {
                 <ListGroupItem>
                   <h4>
                     Subtotal ({cartItems.reduce((a, c) => a + c.quantity, 0)}{' '}
-                    items) : $
+                    items) : Rs
                     {cartItems.reduce((a, c) => a + c.price * c.quantity, 0)}
                   </h4>
                 </ListGroupItem>

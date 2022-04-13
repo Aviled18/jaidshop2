@@ -1,7 +1,23 @@
+import bcrypt from 'bcryptjs';
+
 const data = {
+  users: [
+    {
+      name: 'avinash02',
+      email: 'adhsolutionltd1@gmail.com',
+      password: bcrypt.hashSync('123456'),
+      isAdmin: true,
+    },
+    {
+      name: 'avinash01',
+      email: 'avinash01@gmail.com',
+      password: bcrypt.hashSync('123456'),
+      isAdmin: false,
+    },
+  ],
   products: [
     {
-      _id: '1',
+      // _id: '1',
       name: 'Omega58',
       slug: 'omega58',
       category: 'Lubricant',
@@ -14,7 +30,7 @@ const data = {
       description: 'This is Omega58',
     },
     {
-      _id: '2',
+      // _id: '2',
       name: 'OvenBrite',
       slug: 'ovenbrite',
       category: 'Kitchen',
@@ -27,7 +43,7 @@ const data = {
       description: 'This is OvenBrite',
     },
     {
-      _id: '3',
+      // _id: '3',
       name: 'Safety Clean',
       slug: 'safety-clean',
       category: 'maintenance',
@@ -41,6 +57,5 @@ const data = {
     },
   ],
 };
-
 
 export default data;
