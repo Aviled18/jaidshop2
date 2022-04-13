@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/Aviled18/jaidshop2/issues"
   },
-  "homepage": "https://github.com/Aviled18/jaidshop2#readme"
+  "homepage": "https://github.com/Aviled18/jaidshop2#readme",
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
 }
