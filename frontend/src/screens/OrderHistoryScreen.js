@@ -31,7 +31,7 @@ export default function OrderHistoryScreen() {
     const [{ loading, error, orders }, dispatch] = useReducer(reducer, {
         loading: true,
         error: '',
-    }, []);
+    });
 
     useEffect(() => {
 
