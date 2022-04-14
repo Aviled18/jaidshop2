@@ -54,6 +54,9 @@ main {
 .img-thumnail {  
   height: 80px;
 }
+button.thumbnail {
+  padding: 0;
+}
 
 .card-img-top{
   max-width: 200px;
