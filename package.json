@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-   "scripts": {
+  "scripts": {
     "build": "cd backend && npm install && cd ../frontend && npm install && npm run build --force",
     "start": "node backend/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Aviled18/jaidshop2#readme",
   "dependencies": {
+    "@reduxjs/toolkit": "^1.8.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
