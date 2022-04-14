@@ -1,7 +1,6 @@
 {
   "name": "jaidshop",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "build": "cd backend && npm install && cd ../frontend && npm install && npm run build --force",
@@ -23,5 +22,7 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
-  "node": "16.14.2"
+  "node": "16.14.2",
+  "devDependencies": {},
+  "description": ""
 }
